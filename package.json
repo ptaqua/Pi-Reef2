@@ -1,0 +1,47 @@
+{
+  "name": "reef-pi",
+  "version": "1.0.0",
+  "description": "A Raspberry Pi based reeftank automation system",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc",
+    "example": "examples"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-react": "^6.24.1",
+    "bootstrap": "^4.1.1",
+    "css-loader": "^0.28.11",
+    "electron": "^2.0.2",
+    "jquery": "^3.3.1",
+    "nightmare": "^3.0.1",
+    "react": "^16.3.2",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.3.2",
+    "react-images": "^0.5.17",
+    "react-slider": "^0.11.2",
+    "react-tabs": "^2.2.2",
+    "recharts": "^1.0.0-beta.10",
+    "standard": "^11.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.8.3",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "devDependencies": {
+    "webpack-cli": "^2.1.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reef-pi/reef-pi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reef-pi/reef-pi/issues"
+  },
+  "homepage": "https://github.com/reef-pi/reef-pi#readme"
+}

@@ -1,0 +1,20 @@
+language: go
+go:
+  - "1.10"
+before_install:
+  - curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+  - sudo  apt-get install -y nodejs
+  - sudo ln -sf /usr/bin/nodejs /usr/bin/node
+  - sudo npm install -g npm
+script:
+  - make go-get
+  - ./build/ci.sh
+  - make pi
+  - bundle install
+  - env
+  - /usr/bin/npm install
+  - ./node_modules/.bin/webpack -d
+  - ./node_modules/.bin/standard jsx/*
+  - make deb
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

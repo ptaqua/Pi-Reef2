@@ -1,0 +1,14 @@
+bin
+node_modules
+assets/ui.js
+assets/ui.js.map
+reef-pi.db
+*.db
+*.deb
+dist
+.bundle
+server.crt
+server.key
+.DS_Store
+test/thumbnails/*.png
+coverage.txt
